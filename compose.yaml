@@ -1,0 +1,7 @@
+﻿services:
+  n9_web_api_01:
+    image: n9_web_api_01
+    build:
+      context: .
+      dockerfile: N9_Web_API_01/Dockerfile
+
