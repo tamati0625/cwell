@@ -11,9 +11,9 @@ public class MathUtilTest
     [TestMethod]
     public void Mystery()
     {
-        Assert.AreEqual(MathUtil.Mystery(0), "0");
-        Assert.AreEqual(MathUtil.Mystery(-1), "0");
-        Assert.AreEqual(MathUtil.Mystery(15), "01111");
-        Assert.AreEqual(MathUtil.Mystery(16), "010000");
+        Assert.AreEqual(MathUtil.ConvertToBinaryString(0), "0");
+        Assert.AreEqual(MathUtil.ConvertToBinaryString(-1), "0");
+        Assert.AreEqual(MathUtil.ConvertToBinaryString(15), "01111");
+        Assert.AreEqual(MathUtil.ConvertToBinaryString(16), "010000");
     }
 }

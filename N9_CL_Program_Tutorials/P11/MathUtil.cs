@@ -2,7 +2,7 @@ namespace N9_CL_Program_Tutorials.P11;
 
 public class MathUtil
 {
-    public static string Mystery(int number)
+    public static string ConvertToBinaryString(int number)
     {
         if (number <= 0)
         {
@@ -11,6 +11,6 @@ public class MathUtil
 
         int digit = number % 2;
 
-        return Mystery(number / 2) + digit.ToString();
+        return ConvertToBinaryString(number / 2) + digit.ToString();
     }
 }
