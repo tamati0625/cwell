@@ -2,15 +2,20 @@ namespace N9_CL_Program_Tutorials.P11;
 
 public class MathUtil
 {
-    public static string ConvertToBinaryString(int number)
+    public static string ConvertToBaseString(int number, int base_number)
     {
         if (number <= 0)
         {
             return "0";
         }
 
-        int digit = number % 2;
+        if (number < base_number)
+        {
+            return number.ToString();
+        }
 
-        return ConvertToBinaryString(number / 2) + digit.ToString();
+        int digit = number % base_number;
+
+        return ConvertToBaseString(number / base_number, base_number) + digit.ToString();
     }
 }
