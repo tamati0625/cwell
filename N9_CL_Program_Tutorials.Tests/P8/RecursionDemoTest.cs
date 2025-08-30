@@ -11,8 +11,8 @@ public class RecursionDemoTest
     [TestMethod]
     public void Factorial()
     {
-        int actual = RecursionDemo.Factorial(3);
-
-        Assert.IsTrue(6 == actual);
+        Assert.IsTrue(6 == RecursionDemo.Factorial(3));
+        Assert.IsTrue(24 == RecursionDemo.Factorial(4));
+        Assert.IsTrue(120 == RecursionDemo.Factorial(5));
     }
 }
