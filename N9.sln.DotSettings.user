@@ -27,5 +27,6 @@
     &lt;TestId&gt;MSTest::69FE8C50-234A-4F36-AAB2-B2B4C6B78A63::net9.0::N9_CL_Program_Tutorials.Tests.P6.PredicateDemoTest.FindAll&lt;/TestId&gt;
     &lt;TestId&gt;MSTest::69FE8C50-234A-4F36-AAB2-B2B4C6B78A63::net9.0::N9_CL_Program_Tutorials.Tests.P6.ComparisonDemoTest.Compare&lt;/TestId&gt;
     &lt;TestId&gt;MSTest::69FE8C50-234A-4F36-AAB2-B2B4C6B78A63::net9.0::N9_CL_Program_Tutorials.Tests.P6.ComparisonDemoTest.Sort&lt;/TestId&gt;
+    &lt;TestId&gt;MSTest::69FE8C50-234A-4F36-AAB2-B2B4C6B78A63::net9.0::N9_CL_Program_Tutorials.Tests.P8.RecursionDemoTest.Factorial&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
