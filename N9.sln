@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N9_CL_Program_Tutorials", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N9_CL_Program_Tutorials.Tests", "N9_CL_Program_Tutorials.Tests\N9_CL_Program_Tutorials.Tests.csproj", "{69FE8C50-234A-4F36-AAB2-B2B4C6B78A63}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N9_StringCalculator", "N9_StringCalculator\N9_StringCalculator.csproj", "{B8C56076-CB50-4A28-960F-E2BB515DE89F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "N9_StringCalculator.Tests", "N9_StringCalculator.Tests\N9_StringCalculator.Tests.csproj", "{4E8FB897-D01F-4660-BB8A-2E71D36395B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,5 +39,15 @@ Global
 		{69FE8C50-234A-4F36-AAB2-B2B4C6B78A63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69FE8C50-234A-4F36-AAB2-B2B4C6B78A63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69FE8C50-234A-4F36-AAB2-B2B4C6B78A63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8C56076-CB50-4A28-960F-E2BB515DE89F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8C56076-CB50-4A28-960F-E2BB515DE89F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8C56076-CB50-4A28-960F-E2BB515DE89F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8C56076-CB50-4A28-960F-E2BB515DE89F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E8FB897-D01F-4660-BB8A-2E71D36395B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E8FB897-D01F-4660-BB8A-2E71D36395B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E8FB897-D01F-4660-BB8A-2E71D36395B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E8FB897-D01F-4660-BB8A-2E71D36395B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal
