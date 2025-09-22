@@ -1,4 +1,3 @@
-tuple deconstruction to swap two adjacent elementsusing System.Collections.Generic;
 using JetBrains.Annotations;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using N9_CL_Program_Tutorials.C9;
@@ -9,7 +8,6 @@ namespace N9_CL_Program_Tutorials.Tests.C9;
 [TestSubject(typeof(BubbleSortDemo))]
 public class BubbleSortDemoTest
 {
-
     [TestMethod]
     public void Test_Bubble_Sort()
     {
