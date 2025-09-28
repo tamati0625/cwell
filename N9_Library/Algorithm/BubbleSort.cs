@@ -1,8 +1,8 @@
-namespace N9_Library.C9;
+namespace N9_Library.Algorithm;
 
-public class BubbleSortDemo
+public class BubbleSort
 {
-    public void Sort(int[] numbers)
+    public static void Sort(int[] numbers)
     {
         for (int i = numbers.Length - 1; i > 0; i--)
         {
