@@ -1,6 +1,8 @@
-namespace N9_CL_Class_Examples.Graphs;
+namespace N9_Library.Graphs;
 
 public class Circle: Shape
 {
-    
+    public override void Method()
+    {
+    }
 }

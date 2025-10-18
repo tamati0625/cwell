@@ -1,4 +1,4 @@
-namespace N9_CL_Class_Examples.UoK;
+namespace N9_Library.UoK;
 
 public class Student : Person
 {

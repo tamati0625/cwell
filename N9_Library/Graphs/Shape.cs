@@ -1,6 +1,10 @@
-namespace N9_CL_Class_Examples.Graphs;
+namespace N9_Library.Graphs;
 
 public abstract class Shape
 {
-    
+    public abstract void Method();
+
+    public virtual void Method1()
+    {
+    }
 }
