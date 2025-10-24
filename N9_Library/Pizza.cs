@@ -2,12 +2,17 @@ using System.Numerics;
 
 namespace N9_Library;
 
-public class Pizza
+public class Pizza : IComparable<Pizza>
 {
+    private decimal _retailPrice;
+
+    public decimal RetailPrice => _retailPrice;
+
     private List<Ingredient> _ingredients;
 
-    public Pizza()
+    public Pizza(decimal retailPrice)
     {
+        _retailPrice = retailPrice;
         _ingredients = new List<Ingredient>();
     }
 
@@ -41,5 +46,15 @@ public class Pizza
         }
 
         return true;
+    }
+
+    public int CompareTo(Pizza? other)
+    {
+        if (other == null)
+        {
+            return -1;
+        }
+
+        return _retailPrice.CompareTo(other._retailPrice);
     }
 }
