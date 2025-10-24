@@ -15,7 +15,9 @@ public class PetTest
         Pet p2 = new Beagle("p2");
         Cat p3 = new Cat("p3");
 
-        Dog d1 = (Dog)p2; 
+        Dog d1 = (Dog)p2;
+        Pet p4 = (Pet)p3;
+        Beagle p5 = (Beagle)p1;        
 
         Assert.AreEqual(true, p1 is Pet);
         Assert.AreEqual(false, p1 is Dog);
