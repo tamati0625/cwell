@@ -6,6 +6,12 @@ public class Plant
     private int _ypost;
     private int _foliageSize;
 
+    public int XPos
+    {
+        get => _xpos;
+        set => _xpos = value;
+    }
+
     public Plant(int xpos, int ypost, int foliageSize)
     {
         _xpos = xpos;
