@@ -8,17 +8,17 @@ public class Pizza : IComparable<Pizza>
 
     public decimal RetailPrice => _retailPrice;
 
-    private List<Ingredient> _ingredients;
+    private List<RecipeItem> _recipeItems;
 
     public Pizza(decimal retailPrice)
     {
         _retailPrice = retailPrice;
-        _ingredients = new List<Ingredient>();
+        _recipeItems = new List<RecipeItem>();
     }
 
-    public void AddIngredient(Ingredient ingredient)
+    public void AddRecipeItem(RecipeItem recipeItem)
     {
-        _ingredients.Add(ingredient);
+        _recipeItems.Add(recipeItem);
     }
 
     public BigInteger TotalEnergy
@@ -26,9 +26,9 @@ public class Pizza : IComparable<Pizza>
         get
         {
             BigInteger total = 0;
-            foreach (Ingredient ingredient in _ingredients)
+            foreach (RecipeItem recipeItem in _recipeItems)
             {
-                total += ingredient.EnergyValue;
+                total += recipeItem.Ingredient.EnergyValue;
             }
 
             return total;
@@ -37,9 +37,9 @@ public class Pizza : IComparable<Pizza>
 
     public bool IsVegetarian()
     {
-        foreach (Ingredient ingredient in _ingredients)
+        foreach (RecipeItem recipeItem in _recipeItems)
         {
-            if (!ingredient.VegetarianStatus)
+            if (!recipeItem.Ingredient.VegetarianStatus)
             {
                 return false;
             }
