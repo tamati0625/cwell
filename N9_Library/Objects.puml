@@ -1,24 +1,40 @@
 @startuml
+left to right direction
 
-object h1 {
-    _name = "Sam"
-    _uncle = h2
-}
-
-object h2 {
-    _name = "Sam"
+object orphan1 {
+    _name = "Bilbo"
     _uncle = h1
 }
 
+object h1 {
+    _name = "Sam"
+    _uncle = orphan2
+}
+
+object orphan2 {
+    _name = "Frodo"
+    _uncle = orphan1
+}
+
+object h2 {
+    _name = "Bilbo"
+    _uncle = h1
+}
+
+orphan2 --> orphan1
+h1 --> orphan2
+h2 --> h1
+orphan1 --> h1
+
 map shire {
-    0 *-> h1
-    1 *-> h2
-    2 *-> h1
-    3 *-> h2
+    0 *--> orphan1
+    1 *--> orphan2
+    2 *--> h1
+    3 *--> h2
 }
 
 map listBox_ {
-    DataSource *-> shire
+    DataSource *--> shire
 }
 
 @enduml
