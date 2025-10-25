@@ -1,0 +1,24 @@
+@startuml
+
+object h1 {
+    _name = "Sam"
+    _uncle = h2
+}
+
+object h2 {
+    _name = "Sam"
+    _uncle = h1
+}
+
+map shire {
+    0 *-> h1
+    1 *-> h2
+    2 *-> h1
+    3 *-> h2
+}
+
+map listBox_ {
+    DataSource *-> shire
+}
+
+@enduml
