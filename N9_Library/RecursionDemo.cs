@@ -1,4 +1,4 @@
-namespace N9_Library.P8;
+namespace N9_Library;
 
 public class RecursionDemo
 {
@@ -30,5 +30,21 @@ public class RecursionDemo
             return 1;
 
         return Factorial(n - 1) * n;
+    }
+
+    public static bool IsAscending(int[] array, int startIndex)
+    {
+        if (array is null or { Length: <= 1 } || startIndex == array.Length - 1)
+        {
+            return true;
+        }
+
+        int next = startIndex + 1;
+        if (array[startIndex] <= array[next])
+        {
+            return IsAscending(array, next);
+        }
+
+        return false;
     }
 }
